@@ -11,7 +11,7 @@ npm install arctic
 ```ts
 import { GitHub, generateState } from "arctic";
 
-const github = new GitHub(clientId, clientSecret);
+const github = new GitHub(clientId, clientSecret, redirectURI);
 
 const state = generateState();
 const scopes = ["user:email"];

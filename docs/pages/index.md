@@ -11,7 +11,7 @@ Arctic is a collection of OAuth 2.0 clients for popular providers. It only suppo
 ```ts
 import { GitHub, generateState } from "arctic";
 
-const github = new GitHub(clientId, clientSecret);
+const github = new GitHub(clientId, clientSecret, redirectURI);
 
 const state = generateState();
 const scopes = ["user:email"];
